@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  rabbitmq_broker:
+    image: rabbitmq:3-management-alpine
+    container_name: "rabbitmq_broker"
+    ports:
+      - 5671:5672
+      - 15671:15672
